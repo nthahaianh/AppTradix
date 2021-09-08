@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="100dp"
+        android:background="@drawable/ic_componente_5_2"
+        android:src="@drawable/ic_gruppo_di_maschere_4" />
+
+    <TextView
+        style="@style/TextStyle76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:text="Keep your" />
+
+    <TextView
+        style="@style/TextStyle76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:text="investment safe" />
+
+    <TextView
+        style="@style/TextStyle42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:text="Ex totam praesentium incidunt aut." />
+
+</LinearLayout>

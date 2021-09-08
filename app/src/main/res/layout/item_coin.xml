@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:orientation="horizontal"
+    android:paddingHorizontal="15dp"
+    android:paddingTop="15dp">
+
+    <TextView
+        android:id="@+id/item_coin_name"
+        style="@style/TextStyle45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:text="DOWN JONES"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/item_coin_index"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_voin_location"
+        style="@style/TextStyle46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_coin_name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginVertical="5dp"
+        android:text="NYSE"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/item_coin_time"
+        app:layout_constraintTop_toBottomOf="@id/item_coin_name" />
+
+    <TextView
+        android:id="@+id/item_coin_time"
+        style="@style/TextStyle47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_coin_name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginVertical="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="10:44:45"
+        app:layout_constraintLeft_toRightOf="@id/item_voin_location"
+        app:layout_constraintTop_toBottomOf="@id/item_coin_name" />
+
+    <TextView
+        android:id="@+id/item_coin_index"
+        style="@style/TextStyle48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/background3"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="4dp"
+        android:text="20.047,50"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_coin_percent"
+        style="@style/TextStyle49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginVertical="5dp"
+        android:text="+203 (+1,04%)"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="@id/item_coin_index"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_coin_index" />
+
+    <ImageView
+        style="@style/Line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

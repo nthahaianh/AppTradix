@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/background9"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/item_news_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/img2390177" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_news_percent"
+                style="@style/TextStyle63"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ALT -3,87%" />
+
+            <TextView
+                android:id="@+id/item_news_date"
+                style="@style/TextStyle64"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:text="3 Sept 2020" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_news_title"
+            style="@style/TextStyle65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:text="ATLANTIA" />
+
+        <TextView
+            android:id="@+id/item_news_content"
+            style="@style/TextStyle66"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Illum velit nam voluptatum enim aut ratione ratione officiis totam. Mollitia eum sint tempora ducimus" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_gruppo_di_maschere_1_clipped" />
+</LinearLayout>

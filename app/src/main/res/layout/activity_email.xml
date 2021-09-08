@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".EmailActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_componente_7_1"
+        app:layout_constraintBottom_toBottomOf="@id/line2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/email_tvTradix"
+        style="@style/TextStyle31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRADIX"
+        app:layout_constraintBottom_toTopOf="@id/email_tvFuture"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/email_tvFuture"
+        style="@style/TextStyle37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The future of trading"
+        app:layout_constraintBottom_toBottomOf="@id/line1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_coin"
+        app:layout_constraintBottom_toBottomOf="@id/email_tvTradix"
+        app:layout_constraintLeft_toRightOf="@id/email_tvTradix" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_pixeltrue_newsletter"
+        app:layout_constraintBottom_toBottomOf="@id/line3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/line1" />
+
+    <TextView
+        android:id="@+id/email_tv1"
+        style="@style/TextStyle33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We have sent you an"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/line3" />
+
+    <TextView
+        android:id="@+id/email_tv2"
+        style="@style/TextStyle33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_tv1"
+        tools:text="email to change your" />
+
+    <TextView
+        android:id="@+id/email_tv3"
+        style="@style/TextStyle33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_tv2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/email_btnResend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="50dp"
+        android:enabled="false"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="4dp"
+        android:text="RESEND EMAIL"
+        app:layout_constraintLeft_toLeftOf="@id/line4"
+        app:layout_constraintRight_toRightOf="@id/line5"
+        app:layout_constraintTop_toBottomOf="@id/email_tv3" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_btnResend">
+
+        <TextView
+            style="@style/TextStyle39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wait " />
+
+        <TextView
+            android:id="@+id/email_tvNumber"
+            style="@style/TextStyle39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5" />
+
+        <TextView
+            style="@style/TextStyle39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" seconds before sending it" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
