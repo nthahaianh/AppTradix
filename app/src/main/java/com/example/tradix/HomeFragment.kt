@@ -58,7 +58,7 @@ class HomeFragment : Fragment() {
         home_rvCoin.layoutManager = layoutManager
 
         adapterCoinRV.setCallBack {
-            val action = HomeFragmentDirections.actionHomeFragmentToCoinFragment(coinList[it].name)
+            val action = HomeFragmentDirections.actionHomeFragmentToCoinFragment(coinList[it].name+ " - " +it)
             findNavController().navigate(action)
         }
 
@@ -75,6 +75,7 @@ class HomeFragment : Fragment() {
             }
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, position: Int) {
                 adapterCoinRV.remove(viewHolder)
+                adapterCoinRV.notifyDataSetChanged()
             }
 
         }

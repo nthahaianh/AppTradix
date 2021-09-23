@@ -7,20 +7,24 @@
         android:icon="@drawable/icons_8_increase"
         app:showAsAction="always"
         android:checked="true"
+        android:menuCategory="secondary"
         android:title="Increase" />
     <item
         android:id="@+id/coinFragment"
         android:icon="@drawable/icons_8_chart"
         app:showAsAction="always"
+        android:menuCategory="secondary"
         android:title="Chart" />
     <item
         android:id="@+id/newsFragment"
         android:icon="@drawable/icons_8_news"
         app:showAsAction="always"
+        android:menuCategory="secondary"
         android:title="News" />
     <item
         android:id="@+id/menuFragment"
         android:icon="@drawable/icons_8_customer"
         app:showAsAction="always"
+        android:menuCategory="secondary"
         android:title="Customer" />
 </menu>

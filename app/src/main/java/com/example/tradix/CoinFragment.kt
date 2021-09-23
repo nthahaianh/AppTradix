@@ -36,35 +36,4 @@ class CoinFragment : Fragment() {
             ))
         }
     }
-
-    override fun onStart() {
-        Log.d("coin", "fragmentB: onStart")
-        super.onStart()
-    }
-
-    override fun onResume() {
-        Log.d("coin", "fragmentB: onResume")
-        super.onResume()
-    }
-
-    override fun onPause() {
-        Log.d("coin", "fragmentB: onPause")
-        super.onPause()
-    }
-
-    override fun onStop() {
-        Log.d("coin", "fragmentB: onStop")
-        super.onStop()
-    }
-
-
-    override fun onDestroyView() {
-        Log.d("coin", "fragmentB: onDestroyView")
-        super.onDestroyView()
-    }
-
-    override fun onDestroy() {
-        Log.d("coin", "fragmentB: onDestroy")
-        super.onDestroy()
-    }
 }

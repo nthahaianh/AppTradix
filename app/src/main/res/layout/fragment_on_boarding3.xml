@@ -1,35 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:maxHeight="100dp"
-        android:background="@drawable/ic_componente_5_2"
-        android:src="@drawable/ic_gruppo_di_maschere_4" />
+        android:layout_height="0dp"
+        android:src="@drawable/ic_componente_5_2"
+        app:layout_constraintBottom_toTopOf="@id/onBoarding3_tv1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_gruppo_di_maschere_4"
+        app:layout_constraintBottom_toTopOf="@id/onBoarding3_tv1"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/onBoarding3_tv1"
         style="@style/TextStyle76"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="45dp"
-        android:text="Keep your" />
+        android:text="Keep your"
+        app:layout_constraintBottom_toTopOf="@id/onBoarding3_tv2"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
+        android:id="@+id/onBoarding3_tv2"
         style="@style/TextStyle76"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="45dp"
-        android:text="investment safe" />
+        android:text="investment safe"
+        app:layout_constraintBottom_toTopOf="@id/onBoarding3_tv3"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
+        android:id="@+id/onBoarding3_tv3"
         style="@style/TextStyle42"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="45dp"
-        android:text="Ex totam praesentium incidunt aut." />
+        android:text="Ex totam praesentium incidunt aut."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

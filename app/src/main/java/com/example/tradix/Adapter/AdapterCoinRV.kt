@@ -23,7 +23,7 @@ class AdapterCoinRV(private var coinList: MutableList<Coin>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         var coin = coinList[position]
-        holder.tvName.text = coin.name
+        holder.tvName.text = coin.name + " - " + position
         holder.tvLocation.text = coin.location
         holder.tvTime.text = coin.time
         holder.tvIndex.text = coin.money
